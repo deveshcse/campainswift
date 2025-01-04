@@ -22,7 +22,10 @@ const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
           <label className="absolute -top-2.5 left-2 px-1 bg-white text-sm font-medium text-gray-700  group-focus-within:text-blue-500">
             Company name
           </label>
-          <Input placeholder="Enter company name" className="w-full pt-1 py-6 placeholder:italic " />
+          <Input
+            placeholder="Enter company name"
+            className="w-full pt-1 py-6 placeholder:italic "
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -32,12 +35,14 @@ const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
             </label>
             <Select>
               <SelectTrigger className="pt-1 py-6 italic">
-                <SelectValue placeholder="Select type" className="placeholder-italic" />
+                <SelectValue
+                  placeholder="Select type"
+                  className="placeholder-italic"
+                />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="corporation">Corporation</SelectItem>
                 <SelectItem value="llc">LLC</SelectItem>
-                
               </SelectContent>
             </Select>
           </div>
@@ -59,10 +64,10 @@ const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
         </div>
 
         <div className="relative group">
-          {/* <label className="absolute -top-2.5 left-2 px-1 bg-white text-sm font-medium text-gray-700 group-focus-within:text-blue-500">
-            Address
-          </label> */}
-          <Input placeholder="Address" className="w-full pt-1 py-6 placeholder:text-gray-700 font-medium " />
+          <Input
+            placeholder="Address"
+            className="w-full pt-1 py-6 placeholder:text-gray-700 font-medium "
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -72,21 +77,20 @@ const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
             </label>
             <Select>
               <SelectTrigger className="py-6 italic">
-                <SelectValue placeholder="Select a country"  />
+                <SelectValue placeholder="Select a country" />
               </SelectTrigger>
               <SelectContent className="">
                 <SelectItem value="us">United States</SelectItem>
                 <SelectItem value="uk">United Kingdom</SelectItem>
-
               </SelectContent>
             </Select>
           </div>
 
           <div className="relative group">
-            {/* <label className="absolute -top-2.5 left-2 px-1 bg-white text-sm font-medium text-gray-700 group-focus-within:text-blue-500">
-              City
-            </label> */}
-            <Input placeholder="City" className="pt-1 py-6 placeholder:text-gray-700 font-medium  " />
+            <Input
+              placeholder="City"
+              className="pt-1 py-6 placeholder:text-gray-700 font-medium  "
+            />
           </div>
         </div>
 
@@ -99,7 +103,9 @@ const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
           >
             Previous step
           </Button>
-          <Button className="" onClick={onNext}>Next step</Button>
+          <Button className="" onClick={onNext}>
+            Next step
+          </Button>
         </div>
       </div>
     </div>

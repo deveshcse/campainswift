@@ -19,17 +19,19 @@ const MultiStepForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 to-pink-400 p-4 md:p-8 ">
-      <div className="mx-auto max-w-6xl bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-black">
-        <div className="flex flex-col md:flex-row">
-          <Sidebar currentStep={currentStep} />
-          <div className="flex-1 p-6 md:p-12">
-            <CompanyForm
-              onNext={handleNext}
-              onPrevious={handlePrevious}
-              currentStep={currentStep}
-            />
-          </div>
+    <div className="flex justify-center items-center mx-auto p-20">
+      <div className=" border-4 border-black flex w-11/12 rounded-3xl overflow-hidden bg-white">
+        <Sidebar currentStep={currentStep} />
+
+        <div className="realtive mx-auto md:p-12">
+
+          <span className="absolute top-24 right-40 p-4 text-gray-400 font-semibold">Having Trouble? <span className="text-blue-500">Get Help</span></span>
+
+          <CompanyForm
+            onNext={handleNext}
+            onPrevious={handlePrevious}
+            currentStep={currentStep}
+          />
         </div>
       </div>
     </div>
@@ -37,3 +39,22 @@ const MultiStepForm = () => {
 };
 
 export default MultiStepForm;
+
+// //
+// <div className="">
+// <Sidebar currentStep={currentStep} />
+
+// <div className="">
+//   <div>
+
+//   </div>
+
+//   <div className="flex-1 p-6 md:p-12">
+//     <CompanyForm
+//       onNext={handleNext}
+//       onPrevious={handlePrevious}
+//       currentStep={currentStep}
+//     />
+//   </div>
+// </div>
+// </div>
