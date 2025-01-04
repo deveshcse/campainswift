@@ -11,7 +11,7 @@ import {
 
 const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
   return (
-    <div className="mt-5">
+    <div className="my-5">
       <h1 className="text-3xl font-semibold mb-2">About your company</h1>
       <p className="text-gray-500 mb-8 ">
         Enter detailed information about your company.

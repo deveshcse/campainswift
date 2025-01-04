@@ -11,14 +11,14 @@ const steps = [
 
 const Sidebar = ({ currentStep }) => {
   return (
-    <div className="w-full md:w-96 bg-secondary p-8">
+    <div className="w-full md:w-96 bg-secondary p-8 rounded-l-3xl rounded-r-3xl">
       <div className="flex items-center mb-12">
-        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+        <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
           <img src="/public/logo.png" alt="" />
         </div>
         <span className="ml-3 text-xl font-semibold">InsideBox</span>
       </div>
-      <div className="space-y-6">
+      <div className="flex flex-row md:flex-col space-y-6">
         {steps.map((step) => (
           <div key={step.number} className="flex items-center">
             <div
