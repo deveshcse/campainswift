@@ -59,10 +59,10 @@ const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
         </div>
 
         <div className="relative group">
-          <label className="absolute -top-2.5 left-2 px-1 bg-white text-sm font-medium text-gray-700 group-focus-within:text-blue-500">
+          {/* <label className="absolute -top-2.5 left-2 px-1 bg-white text-sm font-medium text-gray-700 group-focus-within:text-blue-500">
             Address
-          </label>
-          <Input placeholder="Address" className="w-full pt-1 py-6 placeholder:italic " />
+          </label> */}
+          <Input placeholder="Address" className="w-full pt-1 py-6 placeholder:text-gray-700 font-medium " />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -83,10 +83,10 @@ const CompanyForm = ({ onNext, onPrevious, currentStep }) => {
           </div>
 
           <div className="relative group">
-            <label className="absolute -top-2.5 left-2 px-1 bg-white text-sm font-medium text-gray-700 group-focus-within:text-blue-500">
+            {/* <label className="absolute -top-2.5 left-2 px-1 bg-white text-sm font-medium text-gray-700 group-focus-within:text-blue-500">
               City
-            </label>
-            <Input placeholder="City" className="pt-1 py-6 placeholder:italic " />
+            </label> */}
+            <Input placeholder="City" className="pt-1 py-6 placeholder:text-gray-700 font-medium  " />
           </div>
         </div>
 
