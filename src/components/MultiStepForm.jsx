@@ -25,7 +25,7 @@ const MultiStepForm = () => {
 
         <div className="realtive w-full mx-20 md:p-12">
 
-          <span className="absolute top-24 right-40 p-4 text-gray-400 font-semibold">Having Trouble? <span className="text-blue-500">Get Help</span></span>
+          <span className="absolute top-24 right-40 p-4 text-gray-400 font-semibold text-sm">Having Trouble? <span className="text-blue-500">Get Help</span></span>
 
           <CompanyForm
             onNext={handleNext}
@@ -39,22 +39,3 @@ const MultiStepForm = () => {
 };
 
 export default MultiStepForm;
-
-// //
-// <div className="">
-// <Sidebar currentStep={currentStep} />
-
-// <div className="">
-//   <div>
-
-//   </div>
-
-//   <div className="flex-1 p-6 md:p-12">
-//     <CompanyForm
-//       onNext={handleNext}
-//       onPrevious={handlePrevious}
-//       currentStep={currentStep}
-//     />
-//   </div>
-// </div>
-// </div>
