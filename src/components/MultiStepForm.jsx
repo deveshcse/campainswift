@@ -23,7 +23,7 @@ const MultiStepForm = () => {
       <div className=" border-4 border-black flex w-11/12 rounded-3xl overflow-hidden bg-white">
         <Sidebar currentStep={currentStep} />
 
-        <div className="realtive mx-auto md:p-12">
+        <div className="realtive w-full mx-20 md:p-12">
 
           <span className="absolute top-24 right-40 p-4 text-gray-400 font-semibold">Having Trouble? <span className="text-blue-500">Get Help</span></span>
 
