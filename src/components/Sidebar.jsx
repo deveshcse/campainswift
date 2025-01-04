@@ -11,7 +11,7 @@ const steps = [
 
 const Sidebar = ({ currentStep }) => {
   return (
-    <div className="w-full md:w-64 bg-secondary p-8">
+    <div className="w-full md:w-96 bg-secondary p-8">
       <div className="flex items-center mb-12">
         <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
           <img src="/public/logo.png" alt="" />
